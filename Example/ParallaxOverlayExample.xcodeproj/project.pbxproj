@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,10 @@
 		F80DC7DB22EE1DF50079088F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F80DC7D922EE1DF50079088F /* LaunchScreen.storyboard */; };
 		F80DC7E622EE1DF50079088F /* ParallaxOverlayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80DC7E522EE1DF50079088F /* ParallaxOverlayTests.swift */; };
 		F80DC7F122EE1DF50079088F /* ParallaxOverlayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80DC7F022EE1DF50079088F /* ParallaxOverlayUITests.swift */; };
+		F80DC80122EE1F4D0079088F /* ParallaxOverlay in Frameworks */ = {isa = PBXBuildFile; productRef = F80DC80022EE1F4D0079088F /* ParallaxOverlay */; };
+		F80DC80322EE20610079088F /* ParallaxCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80DC80222EE20610079088F /* ParallaxCollectionViewCell.swift */; };
+		F80DC80522EE235D0079088F /* UICollectionDequeue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80DC80422EE235D0079088F /* UICollectionDequeue.swift */; };
+		F80DC80722EE24DB0079088F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F80DC80622EE24DB0079088F /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +54,9 @@
 		F80DC7F022EE1DF50079088F /* ParallaxOverlayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxOverlayUITests.swift; sourceTree = "<group>"; };
 		F80DC7F222EE1DF50079088F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F80DC7FE22EE1E9E0079088F /* ParallaxOverlay */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ParallaxOverlay; path = ../ParallaxOverlay; sourceTree = "<group>"; };
+		F80DC80222EE20610079088F /* ParallaxCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxCollectionViewCell.swift; sourceTree = "<group>"; };
+		F80DC80422EE235D0079088F /* UICollectionDequeue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionDequeue.swift; sourceTree = "<group>"; };
+		F80DC80622EE24DB0079088F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F80DC80122EE1F4D0079088F /* ParallaxOverlay in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,11 +88,13 @@
 		F80DC7C222EE1DF40079088F = {
 			isa = PBXGroup;
 			children = (
+				F80DC80622EE24DB0079088F /* Default-568h@2x.png */,
 				F80DC7FE22EE1E9E0079088F /* ParallaxOverlay */,
 				F80DC7CD22EE1DF40079088F /* ParallaxOverlayExample */,
 				F80DC7E422EE1DF50079088F /* ParallaxOverlayTests */,
 				F80DC7EF22EE1DF50079088F /* ParallaxOverlayUITests */,
 				F80DC7CC22EE1DF40079088F /* Products */,
+				F80DC7FF22EE1F4D0079088F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,6 +114,8 @@
 				F80DC7CE22EE1DF40079088F /* AppDelegate.swift */,
 				F80DC7D022EE1DF40079088F /* SceneDelegate.swift */,
 				F80DC7D222EE1DF40079088F /* ViewController.swift */,
+				F80DC80422EE235D0079088F /* UICollectionDequeue.swift */,
+				F80DC80222EE20610079088F /* ParallaxCollectionViewCell.swift */,
 				F80DC7D422EE1DF40079088F /* Main.storyboard */,
 				F80DC7D722EE1DF50079088F /* Assets.xcassets */,
 				F80DC7D922EE1DF50079088F /* LaunchScreen.storyboard */,
@@ -130,6 +142,13 @@
 			path = ParallaxOverlayUITests;
 			sourceTree = "<group>";
 		};
+		F80DC7FF22EE1F4D0079088F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,6 +165,9 @@
 			dependencies = (
 			);
 			name = ParallaxOverlayExample;
+			packageProductDependencies = (
+				F80DC80022EE1F4D0079088F /* ParallaxOverlay */,
+			);
 			productName = ParallaxOverlay;
 			productReference = F80DC7CB22EE1DF40079088F /* ParallaxOverlayExample.app */;
 			productType = "com.apple.product-type.application";
@@ -235,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F80DC7DB22EE1DF50079088F /* LaunchScreen.storyboard in Resources */,
+				F80DC80722EE24DB0079088F /* Default-568h@2x.png in Resources */,
 				F80DC7D822EE1DF50079088F /* Assets.xcassets in Resources */,
 				F80DC7D622EE1DF40079088F /* Main.storyboard in Resources */,
 			);
@@ -263,6 +286,8 @@
 			files = (
 				F80DC7D322EE1DF40079088F /* ViewController.swift in Sources */,
 				F80DC7CF22EE1DF40079088F /* AppDelegate.swift in Sources */,
+				F80DC80322EE20610079088F /* ParallaxCollectionViewCell.swift in Sources */,
+				F80DC80522EE235D0079088F /* UICollectionDequeue.swift in Sources */,
 				F80DC7D122EE1DF40079088F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,7 +462,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ParallaxOverlay/Info.plist;
+				INFOPLIST_FILE = "$(PROJECT_DIR)/ParallaxOverlayExample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,7 +479,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ParallaxOverlay/Info.plist;
+				INFOPLIST_FILE = "$(PROJECT_DIR)/ParallaxOverlayExample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -584,6 +609,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F80DC80022EE1F4D0079088F /* ParallaxOverlay */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ParallaxOverlay;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F80DC7C322EE1DF40079088F /* Project object */;
 }
