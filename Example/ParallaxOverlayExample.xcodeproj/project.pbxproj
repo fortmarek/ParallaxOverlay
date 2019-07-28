@@ -35,7 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F80DC7CB22EE1DF40079088F /* ParallaxOverlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParallaxOverlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F80DC7CB22EE1DF40079088F /* ParallaxOverlayExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParallaxOverlayExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F80DC7CE22EE1DF40079088F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F80DC7D022EE1DF40079088F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F80DC7D222EE1DF40079088F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,12 +43,13 @@
 		F80DC7D722EE1DF50079088F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F80DC7DA22EE1DF50079088F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F80DC7DC22EE1DF50079088F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F80DC7E122EE1DF50079088F /* ParallaxOverlayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParallaxOverlayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F80DC7E122EE1DF50079088F /* ParallaxOverlayExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParallaxOverlayExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F80DC7E522EE1DF50079088F /* ParallaxOverlayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxOverlayTests.swift; sourceTree = "<group>"; };
 		F80DC7E722EE1DF50079088F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F80DC7EC22EE1DF50079088F /* ParallaxOverlayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParallaxOverlayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F80DC7EC22EE1DF50079088F /* ParallaxOverlayExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParallaxOverlayExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F80DC7F022EE1DF50079088F /* ParallaxOverlayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxOverlayUITests.swift; sourceTree = "<group>"; };
 		F80DC7F222EE1DF50079088F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F80DC7FE22EE1E9E0079088F /* ParallaxOverlay */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ParallaxOverlay; path = ../ParallaxOverlay; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +80,8 @@
 		F80DC7C222EE1DF40079088F = {
 			isa = PBXGroup;
 			children = (
-				F80DC7CD22EE1DF40079088F /* ParallaxOverlay */,
+				F80DC7FE22EE1E9E0079088F /* ParallaxOverlay */,
+				F80DC7CD22EE1DF40079088F /* ParallaxOverlayExample */,
 				F80DC7E422EE1DF50079088F /* ParallaxOverlayTests */,
 				F80DC7EF22EE1DF50079088F /* ParallaxOverlayUITests */,
 				F80DC7CC22EE1DF40079088F /* Products */,
@@ -89,14 +91,14 @@
 		F80DC7CC22EE1DF40079088F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F80DC7CB22EE1DF40079088F /* ParallaxOverlay.app */,
-				F80DC7E122EE1DF50079088F /* ParallaxOverlayTests.xctest */,
-				F80DC7EC22EE1DF50079088F /* ParallaxOverlayUITests.xctest */,
+				F80DC7CB22EE1DF40079088F /* ParallaxOverlayExample.app */,
+				F80DC7E122EE1DF50079088F /* ParallaxOverlayExampleTests.xctest */,
+				F80DC7EC22EE1DF50079088F /* ParallaxOverlayExampleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F80DC7CD22EE1DF40079088F /* ParallaxOverlay */ = {
+		F80DC7CD22EE1DF40079088F /* ParallaxOverlayExample */ = {
 			isa = PBXGroup;
 			children = (
 				F80DC7CE22EE1DF40079088F /* AppDelegate.swift */,
@@ -107,7 +109,7 @@
 				F80DC7D922EE1DF50079088F /* LaunchScreen.storyboard */,
 				F80DC7DC22EE1DF50079088F /* Info.plist */,
 			);
-			path = ParallaxOverlay;
+			path = ParallaxOverlayExample;
 			sourceTree = "<group>";
 		};
 		F80DC7E422EE1DF50079088F /* ParallaxOverlayTests */ = {
@@ -131,9 +133,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F80DC7CA22EE1DF40079088F /* ParallaxOverlay */ = {
+		F80DC7CA22EE1DF40079088F /* ParallaxOverlayExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F80DC7F522EE1DF50079088F /* Build configuration list for PBXNativeTarget "ParallaxOverlay" */;
+			buildConfigurationList = F80DC7F522EE1DF50079088F /* Build configuration list for PBXNativeTarget "ParallaxOverlayExample" */;
 			buildPhases = (
 				F80DC7C722EE1DF40079088F /* Sources */,
 				F80DC7C822EE1DF40079088F /* Frameworks */,
@@ -143,14 +145,14 @@
 			);
 			dependencies = (
 			);
-			name = ParallaxOverlay;
+			name = ParallaxOverlayExample;
 			productName = ParallaxOverlay;
-			productReference = F80DC7CB22EE1DF40079088F /* ParallaxOverlay.app */;
+			productReference = F80DC7CB22EE1DF40079088F /* ParallaxOverlayExample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F80DC7E022EE1DF50079088F /* ParallaxOverlayTests */ = {
+		F80DC7E022EE1DF50079088F /* ParallaxOverlayExampleTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F80DC7F822EE1DF50079088F /* Build configuration list for PBXNativeTarget "ParallaxOverlayTests" */;
+			buildConfigurationList = F80DC7F822EE1DF50079088F /* Build configuration list for PBXNativeTarget "ParallaxOverlayExampleTests" */;
 			buildPhases = (
 				F80DC7DD22EE1DF50079088F /* Sources */,
 				F80DC7DE22EE1DF50079088F /* Frameworks */,
@@ -161,14 +163,14 @@
 			dependencies = (
 				F80DC7E322EE1DF50079088F /* PBXTargetDependency */,
 			);
-			name = ParallaxOverlayTests;
+			name = ParallaxOverlayExampleTests;
 			productName = ParallaxOverlayTests;
-			productReference = F80DC7E122EE1DF50079088F /* ParallaxOverlayTests.xctest */;
+			productReference = F80DC7E122EE1DF50079088F /* ParallaxOverlayExampleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		F80DC7EB22EE1DF50079088F /* ParallaxOverlayUITests */ = {
+		F80DC7EB22EE1DF50079088F /* ParallaxOverlayExampleUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F80DC7FB22EE1DF50079088F /* Build configuration list for PBXNativeTarget "ParallaxOverlayUITests" */;
+			buildConfigurationList = F80DC7FB22EE1DF50079088F /* Build configuration list for PBXNativeTarget "ParallaxOverlayExampleUITests" */;
 			buildPhases = (
 				F80DC7E822EE1DF50079088F /* Sources */,
 				F80DC7E922EE1DF50079088F /* Frameworks */,
@@ -179,9 +181,9 @@
 			dependencies = (
 				F80DC7EE22EE1DF50079088F /* PBXTargetDependency */,
 			);
-			name = ParallaxOverlayUITests;
+			name = ParallaxOverlayExampleUITests;
 			productName = ParallaxOverlayUITests;
-			productReference = F80DC7EC22EE1DF50079088F /* ParallaxOverlayUITests.xctest */;
+			productReference = F80DC7EC22EE1DF50079088F /* ParallaxOverlayExampleUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -207,7 +209,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F80DC7C622EE1DF40079088F /* Build configuration list for PBXProject "ParallaxOverlay" */;
+			buildConfigurationList = F80DC7C622EE1DF40079088F /* Build configuration list for PBXProject "ParallaxOverlayExample" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -220,9 +222,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F80DC7CA22EE1DF40079088F /* ParallaxOverlay */,
-				F80DC7E022EE1DF50079088F /* ParallaxOverlayTests */,
-				F80DC7EB22EE1DF50079088F /* ParallaxOverlayUITests */,
+				F80DC7CA22EE1DF40079088F /* ParallaxOverlayExample */,
+				F80DC7E022EE1DF50079088F /* ParallaxOverlayExampleTests */,
+				F80DC7EB22EE1DF50079088F /* ParallaxOverlayExampleUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -286,12 +288,12 @@
 /* Begin PBXTargetDependency section */
 		F80DC7E322EE1DF50079088F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F80DC7CA22EE1DF40079088F /* ParallaxOverlay */;
+			target = F80DC7CA22EE1DF40079088F /* ParallaxOverlayExample */;
 			targetProxy = F80DC7E222EE1DF50079088F /* PBXContainerItemProxy */;
 		};
 		F80DC7EE22EE1DF50079088F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F80DC7CA22EE1DF40079088F /* ParallaxOverlay */;
+			target = F80DC7CA22EE1DF40079088F /* ParallaxOverlayExample */;
 			targetProxy = F80DC7ED22EE1DF50079088F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -480,7 +482,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ParallaxOverlay.app/ParallaxOverlay";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ParallaxOverlayExample.app/ParallaxOverlayExample";
 			};
 			name = Debug;
 		};
@@ -500,7 +502,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ParallaxOverlay.app/ParallaxOverlay";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ParallaxOverlayExample.app/ParallaxOverlayExample";
 			};
 			name = Release;
 		};
@@ -545,7 +547,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F80DC7C622EE1DF40079088F /* Build configuration list for PBXProject "ParallaxOverlay" */ = {
+		F80DC7C622EE1DF40079088F /* Build configuration list for PBXProject "ParallaxOverlayExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F80DC7F322EE1DF50079088F /* Debug */,
@@ -554,7 +556,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F80DC7F522EE1DF50079088F /* Build configuration list for PBXNativeTarget "ParallaxOverlay" */ = {
+		F80DC7F522EE1DF50079088F /* Build configuration list for PBXNativeTarget "ParallaxOverlayExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F80DC7F622EE1DF50079088F /* Debug */,
@@ -563,7 +565,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F80DC7F822EE1DF50079088F /* Build configuration list for PBXNativeTarget "ParallaxOverlayTests" */ = {
+		F80DC7F822EE1DF50079088F /* Build configuration list for PBXNativeTarget "ParallaxOverlayExampleTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F80DC7F922EE1DF50079088F /* Debug */,
@@ -572,7 +574,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F80DC7FB22EE1DF50079088F /* Build configuration list for PBXNativeTarget "ParallaxOverlayUITests" */ = {
+		F80DC7FB22EE1DF50079088F /* Build configuration list for PBXNativeTarget "ParallaxOverlayExampleUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F80DC7FC22EE1DF50079088F /* Debug */,

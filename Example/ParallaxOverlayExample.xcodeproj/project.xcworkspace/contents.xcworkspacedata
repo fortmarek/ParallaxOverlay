@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:ParallaxOverlay.xcodeproj">
+      location = "self:/Users/marekfort/Development/ParallaxOverlay/ParallaxOverlayExample.xcodeproj">
    </FileRef>
 </Workspace>
