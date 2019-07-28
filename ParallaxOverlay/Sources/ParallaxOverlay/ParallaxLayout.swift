@@ -26,6 +26,7 @@ public class ParallaxLayout: UICollectionViewFlowLayout {
         super.prepare()
 
         if collectionView?.panGestureRecognizer != panGestureRecognizer {
+            panGestureRecognizer = collectionView?.panGestureRecognizer
             panGestureRecognizer?.addTarget(self, action: #selector(handlePanGesture))
         }
     }
@@ -63,8 +64,6 @@ public class ParallaxLayout: UICollectionViewFlowLayout {
         // If flickVelocity 0, then we want to stay on the same page, otherwise always move just by one page to the left or right
         // Depending on the current velocity
         let flickedPages: CGFloat = flickVelocity == 0 ? 0 : (velocity.x < 0.0) ? -1 : 1
-
-        print(velocity.x)
 
         // Calculate newHorizontalOffset.
         let newHorizontalOffset = ((currentPage + flickedPages) * pageWidth) - collectionView.contentInset.left
