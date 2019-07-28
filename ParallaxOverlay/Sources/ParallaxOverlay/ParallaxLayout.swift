@@ -19,6 +19,34 @@ public class ParallaxLayout: UICollectionViewFlowLayout {
         return ParallaxLayoutAttributes.self
     }
 
+    private var panGestureRecognizer: UIGestureRecognizer?
+    private var currentPage: CGFloat = 0
+
+    public override func prepare() {
+        super.prepare()
+
+        if collectionView?.panGestureRecognizer != panGestureRecognizer {
+            panGestureRecognizer?.addTarget(self, action: #selector(handlePanGesture))
+        }
+    }
+
+    @objc private func handlePanGesture(sender: UIPanGestureRecognizer) {
+        guard let collectionView = collectionView else { return }
+        switch sender.state {
+        case .began:
+            // Page width used for estimating and calculating paging.
+            let pageWidth = itemSize.width + minimumLineSpacing
+
+            // Make an estimation of the current page position.
+            let approximatePage = collectionView.contentOffset.x / pageWidth
+
+            // Determine the current page based on velocity.
+            currentPage = round(abs(approximatePage))
+        default:
+            break
+        }
+    }
+
     // Implementing our own paging
     // Default can not be used because we need to have content inset, so we can keep the cells alive by layouting collectionView outside of screen
     // This is needed because otherwise the parallaxed view would disappear as soon as the cell would disappear from the screen
@@ -29,18 +57,14 @@ public class ParallaxLayout: UICollectionViewFlowLayout {
         // Page width used for estimating and calculating paging.
         let pageWidth = itemSize.width + minimumLineSpacing
 
-        // Make an estimation of the current page position.
-        let approximatePage = collectionView.contentOffset.x / pageWidth
-
-        // Determine the current page based on velocity.
-        let currentPage = round(abs(approximatePage))
-
         // Create custom flickVelocity.
         let flickVelocity = velocity.x
 
         // If flickVelocity 0, then we want to stay on the same page, otherwise always move just by one page to the left or right
         // Depending on the current velocity
         let flickedPages: CGFloat = flickVelocity == 0 ? 0 : (velocity.x < 0.0) ? -1 : 1
+
+        print(velocity.x)
 
         // Calculate newHorizontalOffset.
         let newHorizontalOffset = ((currentPage + flickedPages) * pageWidth) - collectionView.contentInset.left
