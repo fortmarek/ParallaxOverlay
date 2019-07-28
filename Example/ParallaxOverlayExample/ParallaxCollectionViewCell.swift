@@ -59,7 +59,7 @@ class ParallaxCollectionViewCell: UICollectionViewCell {
 
         /// Is between info view and image for background
         let cornerMiddleView = UIView()
-        cornerMiddleView.backgroundColor = UIColor(red: 0.988, green: 0.988, blue: 0.988, alpha: 1.0)
+        cornerMiddleView.backgroundColor = .lightWhite
         contentView.addSubview(cornerMiddleView)
         cornerMiddleView.translatesAutoresizingMaskIntoConstraints = false
         cornerMiddleView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor).isActive = true

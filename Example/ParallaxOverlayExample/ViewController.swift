@@ -25,7 +25,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = UIColor(red: 0.988, green: 0.988, blue: 0.988, alpha: 1.0)
+        view.backgroundColor = .lightWhite
 
         let parallaxLayout = ParallaxLayout()
         parallaxLayout.itemSize = CGSize(width: view.frame.width, height: Constants.cellHeight)
@@ -48,6 +48,14 @@ class ViewController: UIViewController {
         collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: Constants.collectionParallaxHorizontalOffset).isActive = true
         collectionView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
         collectionView.heightAnchor.constraint(equalToConstant: Constants.cellHeight).isActive = true
+
+        let gradientView = GradientView(colors: [UIColor.black.withAlphaComponent(0), UIColor.black.withAlphaComponent(0.6)], startPoint: CGPoint(x: 0.0, y: 1.0), endPoint: CGPoint(x: 0.0, y: 0.0))
+        view.addSubview(gradientView)
+        gradientView.translatesAutoresizingMaskIntoConstraints = false
+        gradientView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        gradientView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        gradientView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+        gradientView.heightAnchor.constraint(equalToConstant: 80).isActive = true
     }
 }
 
@@ -65,4 +73,9 @@ extension ViewController: UICollectionViewDataSource {
         cell.subtitle = subtitles[indexPath.item]
         return cell
     }
+}
+
+
+extension UIColor {
+    static let lightWhite: UIColor = UIColor(red: 0.988, green: 0.988, blue: 0.988, alpha: 1.0)
 }

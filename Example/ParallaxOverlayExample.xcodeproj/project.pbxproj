@@ -19,6 +19,7 @@
 		F80DC80322EE20610079088F /* ParallaxCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80DC80222EE20610079088F /* ParallaxCollectionViewCell.swift */; };
 		F80DC80522EE235D0079088F /* UICollectionDequeue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80DC80422EE235D0079088F /* UICollectionDequeue.swift */; };
 		F80DC80722EE24DB0079088F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F80DC80622EE24DB0079088F /* Default-568h@2x.png */; };
+		F80DC80A22EE2BF30079088F /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80DC80922EE2BF30079088F /* GradientView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		F80DC80222EE20610079088F /* ParallaxCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxCollectionViewCell.swift; sourceTree = "<group>"; };
 		F80DC80422EE235D0079088F /* UICollectionDequeue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionDequeue.swift; sourceTree = "<group>"; };
 		F80DC80622EE24DB0079088F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		F80DC80922EE2BF30079088F /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 				F80DC7D222EE1DF40079088F /* ViewController.swift */,
 				F80DC80422EE235D0079088F /* UICollectionDequeue.swift */,
 				F80DC80222EE20610079088F /* ParallaxCollectionViewCell.swift */,
+				F80DC80922EE2BF30079088F /* GradientView.swift */,
 				F80DC7D422EE1DF40079088F /* Main.storyboard */,
 				F80DC7D722EE1DF50079088F /* Assets.xcassets */,
 				F80DC7D922EE1DF50079088F /* LaunchScreen.storyboard */,
@@ -286,6 +289,7 @@
 			files = (
 				F80DC7D322EE1DF40079088F /* ViewController.swift in Sources */,
 				F80DC7CF22EE1DF40079088F /* AppDelegate.swift in Sources */,
+				F80DC80A22EE2BF30079088F /* GradientView.swift in Sources */,
 				F80DC80322EE20610079088F /* ParallaxCollectionViewCell.swift in Sources */,
 				F80DC80522EE235D0079088F /* UICollectionDequeue.swift in Sources */,
 				F80DC7D122EE1DF40079088F /* SceneDelegate.swift in Sources */,
