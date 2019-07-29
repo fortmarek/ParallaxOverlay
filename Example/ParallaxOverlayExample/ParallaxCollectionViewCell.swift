@@ -129,6 +129,6 @@ class ParallaxCollectionViewCell: UICollectionViewCell {
 
         // Default leading offset of infoStackView
         let defaultOffset = contentView.frame.width * ((1 - Constants.infoStackViewWidthMultiplier) / 2)
-        leadingInfoStackViewConstraint.constant = -layoutAttributes.parallaxValue * Constants.maxHorizontalParallax + defaultOffset
+        leadingInfoStackViewConstraint.constant = layoutAttributes.parallaxValue * Constants.maxHorizontalParallax + defaultOffset
     }
 }

@@ -89,7 +89,7 @@ public class ParallaxLayout: UICollectionViewFlowLayout {
         let missing: CGFloat = final - position
 
         // Calculating parallax value -> parallaxValue is 0 when we are at desired position
-        let parallaxValue: CGFloat = missing / collectionView.frame.size.width
+        let parallaxValue: CGFloat = -(missing / collectionView.frame.size.width)
 
         return parallaxValue
     }
