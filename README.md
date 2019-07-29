@@ -9,7 +9,7 @@
         <img src="https://img.shields.io/badge/contact-@marekfort-blue.svg?style=flat" alt="Twitter: @marekfort" />
     </a>
 
-![demo](https://github.com/fortmarek/ParallaxOverlay/parallax.gif)
+![demo](https://github.com/fortmarek/ParallaxOverlay/blob/master/parallax.gif)
 
 ParallaxOverlay is a quick solution if you want parallax for your overlay view in `UICollectionView`.
 
@@ -34,8 +34,8 @@ Implementing this is quite easy, firstly, use the provided custom `UICollectionV
 ```swift
 let parallaxLayout = ParallaxLayout()
 let collectionView = UICollectionView(frame: .zero, collectionViewLayout: parallaxLayout)
-// Our collection view needs to be bigger than our `view`, otherwise the cells would die when off-screen and our parallax values would just disappear
 
+// Our collection view needs to be bigger than our `view`, otherwise the cells would die when off-screen and our parallax values would just disappear
 let collectionViewOverlap: CGFloat = 30
 collectionView.contentInset = UIEdgeInsets(top: 0, left: -collectionViewOverlap, bottom: 0, right: collectionViewOverlap)
 collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: -collectionViewOverlap).isActive = true
