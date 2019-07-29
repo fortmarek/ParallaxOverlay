@@ -1,0 +1,14 @@
+osx_image: xcode10.1
+language: objective-c
+after_deploy:
+- pod trunk push --skip-import-validation --skip-tests --allow-warnings
+script:
+- set -o pipefail && xcodebuild test -scheme $FRAMEWORK_NAME -destination 'platform=iOS
+  Simulator,name=iPhone XS,OS=12.1' ONLY_ACTIVE_ARCH=YES | xcpretty
+deploy:
+  provider: releases
+  api_key:
+    secure: hCioCF/k+jmYAVzu6qKBtYiXlqyOta6RFxspwjmF1W4zSPLRaXyw/X1xEQdWF+V3KoXBSZ53W5ijiw38PYYW4EEFEPqYjq4bvzhBnHwFOVNlGdr6DmFsc7QM4eTmFglCxtYMgEnPNukZUYJLuaaAcXtruyF+HcjfxFUuS6+kcPIJvTHWR2TeCqKf6rHrd71j4iyxsrTPtfzMTBdGJDalOV436kc1ryK0WoDs1gQzHxUpmxXcD5puFjslPLTtDnDBRx5FCILQE0vwaOAwT5dDFSLLcePaB9dqSuAodfBo1j6l066IGKj08UAfBWonkMIPc9NxHF9pOaxshPgrrsuWjq2e1cpDvgsRtYe6j6+vTOObSaEfd8fp1wKkEWWcFYSJllfF9Yhj+XKQdM28yggXkNZoAqHgMijoysScxCtwfu9aQGyNbnqKbaWCeOSY+i4Lajg4bpeuczQl5K86ImLHSD+89sFGQfKD2ObMF+YAMSVpGXLuwjFe1PXcSZM5iIf1yzlRCeJGWGNhxlItiGedaFEsfMDCmupClpFzJd/xNc2BvwaGVT6J0uwsr6PpjFIrUxL7YYbEyMQek5m6wO5of0RlM7sshrhXbSqASVY68neDGoQn5pr0/eF0Ud35VETGVrmxh/qaOXM2vbr5sIbvK6knr+B2zvPnTPhrmEYL+Yw=
+  file: ''
+  on:
+    repo: fortmarek/ParallaxOverlay
