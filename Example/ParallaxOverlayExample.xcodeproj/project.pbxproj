@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F80DC7CF22EE1DF40079088F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80DC7CE22EE1DF40079088F /* AppDelegate.swift */; };
-		F80DC7D122EE1DF40079088F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80DC7D022EE1DF40079088F /* SceneDelegate.swift */; };
 		F80DC7D322EE1DF40079088F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80DC7D222EE1DF40079088F /* ViewController.swift */; };
-		F80DC7D622EE1DF40079088F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F80DC7D422EE1DF40079088F /* Main.storyboard */; };
 		F80DC7D822EE1DF50079088F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F80DC7D722EE1DF50079088F /* Assets.xcassets */; };
 		F80DC7DB22EE1DF50079088F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F80DC7D922EE1DF50079088F /* LaunchScreen.storyboard */; };
 		F80DC7E622EE1DF50079088F /* ParallaxOverlayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80DC7E522EE1DF50079088F /* ParallaxOverlayTests.swift */; };
@@ -42,9 +40,7 @@
 /* Begin PBXFileReference section */
 		F80DC7CB22EE1DF40079088F /* ParallaxOverlayExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParallaxOverlayExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F80DC7CE22EE1DF40079088F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F80DC7D022EE1DF40079088F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F80DC7D222EE1DF40079088F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F80DC7D522EE1DF40079088F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F80DC7D722EE1DF50079088F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F80DC7DA22EE1DF50079088F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F80DC7DC22EE1DF50079088F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,7 +50,7 @@
 		F80DC7EC22EE1DF50079088F /* ParallaxOverlayExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParallaxOverlayExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F80DC7F022EE1DF50079088F /* ParallaxOverlayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxOverlayUITests.swift; sourceTree = "<group>"; };
 		F80DC7F222EE1DF50079088F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F80DC7FE22EE1E9E0079088F /* ParallaxOverlay */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ParallaxOverlay; path = ../ParallaxOverlay; sourceTree = "<group>"; };
+		F80DC7FE22EE1E9E0079088F /* .. */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ..; sourceTree = "<group>"; };
 		F80DC80222EE20610079088F /* ParallaxCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxCollectionViewCell.swift; sourceTree = "<group>"; };
 		F80DC80422EE235D0079088F /* UICollectionDequeue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionDequeue.swift; sourceTree = "<group>"; };
 		F80DC80622EE24DB0079088F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -91,7 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				F80DC80622EE24DB0079088F /* Default-568h@2x.png */,
-				F80DC7FE22EE1E9E0079088F /* ParallaxOverlay */,
+				F80DC7FE22EE1E9E0079088F /* .. */,
 				F80DC7CD22EE1DF40079088F /* ParallaxOverlayExample */,
 				F80DC7E422EE1DF50079088F /* ParallaxOverlayTests */,
 				F80DC7EF22EE1DF50079088F /* ParallaxOverlayUITests */,
@@ -114,12 +110,10 @@
 			isa = PBXGroup;
 			children = (
 				F80DC7CE22EE1DF40079088F /* AppDelegate.swift */,
-				F80DC7D022EE1DF40079088F /* SceneDelegate.swift */,
 				F80DC7D222EE1DF40079088F /* ViewController.swift */,
 				F80DC80422EE235D0079088F /* UICollectionDequeue.swift */,
 				F80DC80222EE20610079088F /* ParallaxCollectionViewCell.swift */,
 				F80DC80922EE2BF30079088F /* GradientView.swift */,
-				F80DC7D422EE1DF40079088F /* Main.storyboard */,
 				F80DC7D722EE1DF50079088F /* Assets.xcassets */,
 				F80DC7D922EE1DF50079088F /* LaunchScreen.storyboard */,
 				F80DC7DC22EE1DF50079088F /* Info.plist */,
@@ -262,7 +256,6 @@
 				F80DC7DB22EE1DF50079088F /* LaunchScreen.storyboard in Resources */,
 				F80DC80722EE24DB0079088F /* Default-568h@2x.png in Resources */,
 				F80DC7D822EE1DF50079088F /* Assets.xcassets in Resources */,
-				F80DC7D622EE1DF40079088F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +285,6 @@
 				F80DC80A22EE2BF30079088F /* GradientView.swift in Sources */,
 				F80DC80322EE20610079088F /* ParallaxCollectionViewCell.swift in Sources */,
 				F80DC80522EE235D0079088F /* UICollectionDequeue.swift in Sources */,
-				F80DC7D122EE1DF40079088F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,14 +320,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F80DC7D422EE1DF40079088F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F80DC7D522EE1DF40079088F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F80DC7D922EE1DF50079088F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -397,7 +381,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -451,7 +435,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -466,6 +450,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QH95ER52SG;
 				INFOPLIST_FILE = "$(PROJECT_DIR)/ParallaxOverlayExample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -483,6 +468,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QH95ER52SG;
 				INFOPLIST_FILE = "$(PROJECT_DIR)/ParallaxOverlayExample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
