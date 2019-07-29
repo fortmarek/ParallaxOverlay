@@ -1,10 +1,10 @@
-osx_image: xcode10.1
+osx_image: xcode11
 language: objective-c
 after_deploy:
 - pod trunk push --skip-import-validation --skip-tests --allow-warnings
 script:
-- set -o pipefail && xcodebuild test -scheme $FRAMEWORK_NAME -destination 'platform=iOS
-  Simulator,name=iPhone XS,OS=12.1' ONLY_ACTIVE_ARCH=YES | xcpretty
+- set -o pipefail
+- xcodebuild -project Example/ParallaxOverlayExample.xcodeproj -scheme ParallaxOverlayExample -sdk iphonesimulator -destination 'OS=13.0,name=iPhone Xʀ,platform=iOS Simulator' -configuration Debug ONLY_ACTIVE_ARCH=NO | xcpretty -c
 deploy:
   provider: releases
   api_key:
