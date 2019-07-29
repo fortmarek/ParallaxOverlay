@@ -2,4 +2,4 @@
 /.build
 /Packages
 /*.xcodeproj
-xcuserdata/
+Example/ParallaxOverlayExample.xcodeproj/xcuserdata
