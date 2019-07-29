@@ -5,5 +5,3 @@ script:
 - xcodebuild -project Example/ParallaxOverlayExample.xcodeproj -scheme ParallaxOverlayExample
   -sdk iphonesimulator -destination 'OS=13.0,name=iPhone Xʀ,platform=iOS Simulator'
   -configuration Debug ONLY_ACTIVE_ARCH=NO | xcpretty -c
-deploy:
-- pod trunk push --skip-import-validation --skip-tests --allow-warnings
