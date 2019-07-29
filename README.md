@@ -61,4 +61,4 @@ override func apply(_ layoutAttributes: UICollectionViewLayoutAttributes) {
 
 In this function we just apply `parallaxValue` to the constraint we would like to move off the axis.
 
-... and we are all set! 🙂
+... and we are all set! 🙂 Enjoy 🚀
