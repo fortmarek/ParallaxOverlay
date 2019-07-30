@@ -1,7 +1,6 @@
 # ParallaxOverlay
 [![CI Status](http://img.shields.io/travis/fortmarek/ParallaxOverlay.svg?style=flat)](https://travis-ci.org/fortmarek/ParallaxOverlay)
 [![Version](https://img.shields.io/cocoapods/v/ParallaxOverlay.svg?style=flat)](http://cocoapods.org/pods/ParallaxOverlay)
-[![License](https://img.shields.io/cocoapods/l/ParallaxOverlay.svg?style=flat)](http://cocoapods.org/pods/ParallaxOverlay)
 <a href="https://swift.org/package-manager">
         <img src="https://img.shields.io/badge/spm-compatible-brightgreen.svg?style=flat" alt="Swift Package Manager" />
     </a>
