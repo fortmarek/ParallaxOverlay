@@ -34,6 +34,8 @@ Implementing this is quite easy, firstly, use the provided custom `UICollectionV
 ```swift
 let parallaxLayout = ParallaxLayout()
 let collectionView = UICollectionView(frame: .zero, collectionViewLayout: parallaxLayout)
+// Recommended for better paging effect
+collectionView.decelerationRate = .fast
 
 // Our collection view needs to be bigger than our `view`, otherwise the cells would die when off-screen and our parallax values would just disappear
 let collectionViewOverlap: CGFloat = 30

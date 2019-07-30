@@ -16,7 +16,7 @@ class ViewController: UIViewController {
 
     private enum Constants {
         static let collectionParallaxHorizontalOffset: CGFloat = 30
-        static let cellHeight: CGFloat = 300
+        static let cellHeight: CGFloat = 350
     }
 
     private let titles: [String] = ["Georgia", "Svaneti", "Ushguli", "Adishi", "Chvabiani"]
@@ -56,6 +56,28 @@ class ViewController: UIViewController {
         gradientView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
         gradientView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
         gradientView.heightAnchor.constraint(equalToConstant: 80).isActive = true
+
+        let georgiaLabel = UILabel()
+        georgiaLabel.text = "🇬🇪"
+        georgiaLabel.font = UIFont.systemFont(ofSize: 80)
+        georgiaLabel.textAlignment = .center
+        view.addSubview(georgiaLabel)
+        georgiaLabel.translatesAutoresizingMaskIntoConstraints = false
+        georgiaLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        georgiaLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        georgiaLabel.topAnchor.constraint(equalTo: collectionView.bottomAnchor, constant: 30).isActive = true
+
+        let visitLabel = UILabel()
+        visitLabel.text = "You should\nvisit Geogia someday!"
+        visitLabel.font = UIFont.systemFont(ofSize: 30, weight: .bold)
+        visitLabel.textColor = .lightGray
+        visitLabel.numberOfLines = 0
+        visitLabel.textAlignment = .center
+        view.addSubview(visitLabel)
+        visitLabel.translatesAutoresizingMaskIntoConstraints = false
+        visitLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        visitLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        visitLabel.topAnchor.constraint(equalTo: georgiaLabel.bottomAnchor, constant: 20).isActive = true
     }
 }
 
