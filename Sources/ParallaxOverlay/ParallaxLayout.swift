@@ -158,3 +158,6 @@ d
 d
 d
 """
+
+let lintIssue: String? = "f"
+print(lintIssue!)
